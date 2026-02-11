@@ -3,72 +3,98 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Indigo Airways</title>
+	<title>Food Order Page</title>
 	<style>
 		body{
-			background-color:rgb(234, 210, 174);
+			background-color: rgb(234, 210, 174);
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		header, footer{
+			text-align: center;
+			background-color: lightcoral;
+			padding: 10px;
+		}
+		main{
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.container{
+			width: 800px;
+			background-color: aqua;
+			padding: 20px;
+		}
+		figure{
+			text-align: center;
+		}
+		img{
+			width: 250px;
+			height: auto;
 		}
 	</style>
 </head>
+
 <body>
+
 	<header>
-		<h1>Order your food , hurry up..</h1>
+		<h1>Order Your Food, Hurry Up!</h1>
 	</header>
 
 	<main>
+		<div class="container">
 
-		<div style="width: 1000px; background-color: aqua;">
 			<section>
-			<ol>
-			<li><a href="#">Idly</a></li>
-			<li><a href="https://www.google.com">Dosa</a></li>
-			<li><a href="#">Puri</a></li>
-			<li><a href="#">Roti</a></li>
-		</ol>
-		<div style="border: 1px solid; padding: 10px; margin: 10px;">
-			<form action="">
-				<div style="padding: 1px; margin: 1px;"><label for="text">Enter food name:  </label><input type="text" placeholder="Food Name"> </div>
-				<div style="padding: 1px; margin: 1px;"> <label for="text">Quantity: </label><input type="number" placeholder="Quantity"> </div>
-				<button type="submit">Submit</button>
-			</form>
-            <figure>
-			<img src="https://www.google.com/imgres?q=meals%20images&imgurl=https%3A%2F%2Frakskitchen.net%2Fwp-content%2Fuploads%2F2013%2F08%2F9634876480_20d7ac8196_o.jpg&imgrefurl=https%3A%2F%2Frakskitchen.net%2Fsouth-indian-meals-lunch-menu-17-thala-vazhai-ilai-sappadu%2F&docid=-9MDJB6Jd9qQpM&tbnid=Exnl-4UGUaMjRM&vet=12ahUKEwiYuo2c7caSAxUPSmwGHe0EKiAQnPAOegQIHBAB..i&w=650&h=577&hcb=2&ved=2ahUKEwiYuo2c7caSAxUPSmwGHe0EKiAQnPAOegQIHBAB" 
-			alt="Meals" title="Free meals"
-			style="width: 100px; padding-left:100px;">
-			<figcaption>...hurry up get free meals!!!</figcaption>
+				<h2>Available Items</h2>
+				<ol>
+					<li>Idly</li>
+					<li>Dosa</li>
+					<li>Puri</li>
+					<li>Roti</li>
+				</ol>
+			</section>
 
+			<section>
+				<h2>Place Your Order</h2>
+				<form>
+					<label for="food">Enter Food Name:</label>
+					<input type="text" id="food" required><br><br>
 
-			</figure>
-			<details>
-				<summary>
-					Special offers!!!
-				</summary>
-				<p>Please tick your state to avail this offers.</p>
-				<form action="">
-				<input type="radio" name="state"> Karnataka
-				<br>
-				<input type="radio" name="state"> Kerala
-				<br>
-				<input type="radio" name="state"> Tamil Nadu
-				<br>
-				<button type="submit">Submit</button>
+					<label for="quantity">Quantity:</label>
+					<input type="number" id="quantity" required><br><br>
+
+					<button type="submit">Submit</button>
 				</form>
-			</details>
+			</section>
 
+			<section>
+				<h2>Today's Special Meal</h2>
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Indian_Thali.jpg"
+						 alt="South Indian Meals"
+						 title="Special South Indian Meals">
+					<figcaption>Hurry up! Get free meals today only!</figcaption>
+				</figure>
+			</section>
 
-		</div>
+			<section>
+				<details>
+					<summary><strong>Special Offers!!!</strong></summary>
+					<p>Please select your state to avail the offer:</p>
+					<form>
+						<input type="radio" name="state" value="Karnataka"> Karnataka<br>
+						<input type="radio" name="state" value="Kerala"> Kerala<br>
+						<input type="radio" name="state" value="Tamil Nadu"> Tamil Nadu<br><br>
+						<button type="submit">Submit</button>
+					</form>
+				</details>
+			</section>
 
-		<button>Order Now !!</button>
-		</section>
-
-		<section>
-			<p style="text-align: center; font-family: 'Courier New', Courier, monospace;">Order your food and enjoy the meals free for today only..!</p>
-		</section>
 		</div>
 	</main>
 
 	<footer>
-		<h1>Contact Us!!</h1>
+		<h2>Contact Us</h2>
 	</footer>
+
 </body>
 </html>

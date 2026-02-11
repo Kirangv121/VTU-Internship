@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Amazon</title>
+	<title>HTML Practice Page</title>
 
 	<style>
 		body{
@@ -11,37 +11,51 @@
 			margin-left: 20px;
 			margin-right: 20px;
 		}
-		
+		header{
+			text-align: center;
+			background-color: lightblue;
+			padding: 10px;
+		}
+		section{
+			background-color: lightgreen;
+			padding: 15px;
+			margin-top: 10px;
+		}
 	</style>
 </head>
 
 <body>
 
-   <header style="text-align: center;">
-    
-	<h1>Welcome To India</h1>
-
+   <header>
+	<h1>Welcome to My HTML Practice Page</h1>
+	<p>This page is created after learning HTML basics.</p>
    </header>	
 	
-	<div style="background-color: greenyellow">
-        <h1>Welcome to Amazon web page</h1>
-	</div>
+   <main>
+	<section>
+        <h2>About HTML</h2>
+		<p>HTML is used to create the structure of web pages using elements like headings, paragraphs, lists, and links.</p>
+		<a href="https://www.w3schools.com/html/" target="_blank">Learn More About HTML</a>
+	</section>
 
-	<div style="background-color: rgb(17, 171, 58);" >
-		<h1 style="color: rgb(35, 35, 41);">Color changed for this text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum atque eaque architecto itaque quisquam, vero in illum velit voluptates, facere accusantium eligendi quae nobis! Reiciendis eaque rerum ipsum cumque.</h1>
+	<section>
+		<h2>Ordered List of Cities</h2>
         <ol>
 			<li>Delhi</li>
 			<li>Mumbai</li>
 			<li>Karnataka</li>
 		</ol>
-       <hr>
+	</section>
+
+	<section>
+		<h2>Unordered List of States</h2>
 		<ul>
-			<li>Tamil nadu</li>
-			<li>Andra Pradesh</li>
+			<li>Tamil Nadu</li>
+			<li>Andhra Pradesh</li>
 			<li>Uttar Pradesh</li>
 		</ul>
-	</div>
-	
+	</section>
+   </main>
 
 </body>
 </html>
