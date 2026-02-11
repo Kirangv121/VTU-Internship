@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sidebar container */
+.sidebar {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Heading */
+.sidebar h2 {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Remove bullets */
+.sidebar ul {
+    list-style: none;
+}
+
+/* List items */
+.sidebar li {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Links */
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+    background-color: #0077b6;
+    color: white;
+}
