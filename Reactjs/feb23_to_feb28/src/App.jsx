@@ -5,6 +5,7 @@ import './App.css'
 import UseEffectDataFetch from './feb23/UseEffectDataFetch'
 import UseLayoutEffectMeasure from './feb24/UseLayoutEffectMeasure'
 import UseInsertionEffectStyles from './feb24/UseInsertionEffectStyles'
+import UseMemoPerformance from './feb25/UseMemoPerformance'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,9 @@ function App() {
       <UseLayoutEffectMeasure/>
       <hr />
       <UseInsertionEffectStyles/>
+      <hr />
+      <UseMemoPerformance/>
+      
 
     </>
   )
