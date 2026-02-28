@@ -30,6 +30,7 @@ function UseMemoPerformance() {
       <div className="card shadow">
         <div className="card-header bg-dark text-white">
           <h3 className="mb-0">useMemo Performance Optimization -25 Feb 2026 </h3>
+          <h2>Exploring all react hooks</h2>
         </div>
 
         <div className="card-body">
