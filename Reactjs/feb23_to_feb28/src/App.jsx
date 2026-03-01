@@ -6,6 +6,7 @@ import UseEffectDataFetch from './feb23/UseEffectDataFetch'
 import UseLayoutEffectMeasure from './feb24/UseLayoutEffectMeasure'
 import UseInsertionEffectStyles from './feb24/UseInsertionEffectStyles'
 import UseMemoPerformance from './feb25/UseMemoPerformance'
+import HooksAllInOne from './feb26/HooksAllInOne'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,11 @@ function App() {
       <UseInsertionEffectStyles/>
       <hr />
       <UseMemoPerformance/>
-      
+      <hr />
+      <h2>All hooks - 26 feb 2026</h2>
+      <HooksAllInOne/>
+
+
 
     </>
   )
