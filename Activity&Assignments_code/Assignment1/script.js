@@ -9,7 +9,7 @@ function checkMarks() {
     }
 
     if (marks >= 40) {
-        result.textContent = "Pass";
+        result.textContent = "Obtained marks is " + marks + ". Pass";
         result.style.color = "green";
     } else {
         result.textContent = "Fail";
