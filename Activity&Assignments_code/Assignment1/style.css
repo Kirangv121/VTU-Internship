@@ -34,14 +34,14 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #4CAF50;
-    color: white;
+    color: rgb(239, 221, 221);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #64bf69;
+    background-color: #6ece73;
 }
 
 #result {
