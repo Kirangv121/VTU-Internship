@@ -47,7 +47,7 @@ employee.showEmployeeInfo();
 let product = {
     productName: "Laptop",
     brand: "Dell",
-    price: 75000,
+    price: 80000,
     category: "Electronics",
     stock: 25,
 
