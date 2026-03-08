@@ -1,57 +1,28 @@
-import React from "react";
+import { useState } from "react";
 
 function DynamicContent() {
 
-  const user = {
+  const [user] = useState({
     name: "Kirana G V",
     role: "Software Developer",
     location: "Bengaluru",
-    skills: ["React", "JavaScript", "AI"],
-    experience: "Full Stack Development",
-    avatar: "https://i.pravatar.cc/150"
-  };
-
-  const { name, role, location, skills, experience, avatar } = user;
-
-  const handleClick = () => {
-    alert(`Welcome to ${name}'s profile!`);
-  };
+    skills: "React, JavaScript, AI",
+    experience: "Full Stack Development"
+  });
 
   return (
     <div className="card">
+      <h2>User Profile</h2>
 
-      {/* Profile Image */}
-      <div className="profile-header">
-        <img src={avatar} alt="profile" className="avatar" />
-        <h2 className="card-title">{name}</h2>
-        <p className="role">{role}</p>
-      </div>
-
-      {/* Profile Details */}
-      <div className="card-body">
-        <p><strong>📍 Location:</strong> {location}</p>
-        <p><strong>💼 Experience:</strong> {experience}</p>
-
-        {/* Skills Section */}
-        <div className="skills-section">
-          <strong>🚀 Skills:</strong>
-          <div className="skills">
-            {skills.map((skill, index) => (
-              <span key={index} className="skill-badge">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Button */}
-        <button className="profile-btn" onClick={handleClick}>
-          View Profile
-        </button>
-      </div>
+      <p><b>Name: </b> {user.name}</p>
+      <p><b>Role: </b> {user.role}</p>
+      <p><b>Location: </b> {user.location}</p>
+      <p><b>Skills: </b> {user.skills}</p>
+      <p><b>Experience: </b> {user.experience}</p>
 
     </div>
   );
 }
 
 export default DynamicContent;
+
