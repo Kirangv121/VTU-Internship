@@ -1,25 +1,35 @@
-import { useState } from "react";
+import React from "react";
 
 function DynamicContent() {
-
-  const [user] = useState({
+  const user = {
     name: "Kirana G V",
     role: "Software Developer",
     location: "Bengaluru",
-    skills: "React, JavaScript, AI",
+    skills: ["React", "JavaScript", "AI"],
     experience: "Full Stack Development"
-  });
+  };
+
+  const { name, role, location, skills, experience } = user;
 
   return (
     <div className="card">
-      <h2>User Profile</h2>
+      <h2 className="card-title">User Profile</h2>
 
-      <p><b>Name:</b> {user.name}</p>
-      <p><b>Role:</b> {user.role}</p>
-      <p><b>Location:</b> {user.location}</p>
-      <p><b>Skills:</b> {user.skills}</p>
-      <p><b>Experience:</b> {user.experience}</p>
+      <div className="card-body">
+        <p><strong>Name:</strong> {name}</p>
+        <p><strong>Role:</strong> {role}</p>
+        <p><strong>Location:</strong> {location}</p>
+        <p><strong>Experience:</strong> {experience}</p>
 
+        <div>
+          <strong>Skills:</strong>
+          <ul>
+            {skills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
