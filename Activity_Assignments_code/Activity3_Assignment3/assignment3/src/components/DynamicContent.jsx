@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 
-function ProductContent() {
+function FoodContent() {
 
-  const [product] = useState({
-    name: "Smartphone",
-    brand: "Samsung",
-    price: "₹25,000",
-    category: "Electronics",
-    features: ["6GB RAM", "128GB Storage", "5000mAh Battery", "AMOLED Display"]
+  const [food] = useState({
+    name: "Masala Dosa",
+    type: "South Indian",
+    price: "₹80",
+    restaurant: "Udupi Restaurant",
+    ingredients: ["Rice Batter", "Potato Filling", "Spices", "Ghee"]
   });
 
-  const { name, brand, price, category, features } = product;
+  const { name, type, price, restaurant, ingredients } = food;
 
   return (
     <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
       <div style={{ border: "1px solid #ccc", padding: "20px", borderRadius: "10px", width: "300px" }}>
-        
-        <h2>Product Details</h2>
 
-        <p><b>Product Name:</b> {name}</p>
-        <p><b>Brand:</b> {brand}</p>
+        <h2>Food Details</h2>
+
+        <p><b>Food Name:</b> {name}</p>
+        <p><b>Type:</b> {type}</p>
         <p><b>Price:</b> {price}</p>
-        <p><b>Category:</b> {category}</p>
+        <p><b>Restaurant:</b> {restaurant}</p>
 
         <div>
-          <b>Features:</b>
+          <b>Ingredients:</b>
           <ul>
-            {features.map((feature, index) => (
-              <li key={index}>{feature}</li>
+            {ingredients.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
@@ -37,4 +37,4 @@ function ProductContent() {
   );
 }
 
-export default ProductContent;
+export default FoodContent;
