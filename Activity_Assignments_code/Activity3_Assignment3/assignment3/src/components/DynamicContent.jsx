@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 
-function DynamicContent() {
+function ProductContent() {
 
-  const [user] = useState({
-    name: "Kirana G V",
-    role: "Software Developer",
-    location: "Bengaluru",
-    skills: ["React", "JavaScript", "AI"],
-    experience: "Full Stack Development"
+  const [product] = useState({
+    name: "Smartphone",
+    brand: "Samsung",
+    price: "₹25,000",
+    category: "Electronics",
+    features: ["6GB RAM", "128GB Storage", "5000mAh Battery", "AMOLED Display"]
   });
 
-  const { name, role, location, skills, experience } = user;
+  const { name, brand, price, category, features } = product;
 
   return (
     <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
-      <div className="card" style={{ border: "1px solid #ccc", padding: "20px", borderRadius: "10px", width: "300px" }}>
+      <div style={{ border: "1px solid #ccc", padding: "20px", borderRadius: "10px", width: "300px" }}>
         
-        <h2>User Profile</h2>
+        <h2>Product Details</h2>
 
-        <p><b>Name:</b> {name}</p>
-        <p><b>Role:</b> {role}</p>
-        <p><b>Location:</b> {location}</p>
-        <p><b>Experience:</b> {experience}</p>
+        <p><b>Product Name:</b> {name}</p>
+        <p><b>Brand:</b> {brand}</p>
+        <p><b>Price:</b> {price}</p>
+        <p><b>Category:</b> {category}</p>
 
         <div>
-          <b>Skills:</b>
+          <b>Features:</b>
           <ul>
-            {skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
+            {features.map((feature, index) => (
+              <li key={index}>{feature}</li>
             ))}
           </ul>
         </div>
@@ -37,4 +37,4 @@ function DynamicContent() {
   );
 }
 
-export default DynamicContent;
+export default ProductContent;
