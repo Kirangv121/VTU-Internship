@@ -1,40 +1,27 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-function FoodContent() {
+function DynamicContent() {
 
-  const [food] = useState({
-    name: "Masala Dosa",
-    type: "South Indian",
-    price: "₹80",
-    restaurant: "Udupi Restaurant",
-    ingredients: ["Rice Batter", "Potato Filling", "Spices", "Ghee"]
+  const [user] = useState({
+    name: "Kirana G V",
+    role: "Software Developer",
+    location: "Bengaluru",
+    skills: "React, JavaScript, AI",
+    experience: "Full Stack Development"
   });
 
-  const { name, type, price, restaurant, ingredients } = food;
-
   return (
-    <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
-      <div style={{ border: "1px solid #ccc", padding: "20px", borderRadius: "10px", width: "300px" }}>
+    <div className="card">
+      <h2>User Profile</h2>
 
-        <h2>Food Details</h2>
+      <p><b>Name: </b> {user.name}</p>
+      <p><b>Role: </b> {user.role}</p>
+      <p><b>Location: </b> {user.location}</p>
+      <p><b>Skills: </b> {user.skills}</p>
+      <p><b>Experience: </b> {user.experience}</p>
 
-        <p><b>Food Name:</b> {name}</p>
-        <p><b>Type:</b> {type}</p>
-        <p><b>Price:</b> {price}</p>
-        <p><b>Restaurant:</b> {restaurant}</p>
-
-        <div>
-          <b>Ingredients:</b>
-          <ul>
-            {ingredients.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-
-      </div>
     </div>
   );
 }
 
-export default FoodContent;
+export default DynamicContent;
