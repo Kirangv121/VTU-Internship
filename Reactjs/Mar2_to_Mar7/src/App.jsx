@@ -3,6 +3,7 @@ import Student from "./Mar2/Student";
 import JumbotronUseRef from "./Mar2/JumbotronUseRef";
 import SearchExamples from "./Mar3/SearchExamples";
 import UseFormExamples from "./Mar4/UseFormExamples";
+import RouterExamples from "./Mar5/RouterExamples";
 
 function App() {
   const studentSubjects = [
@@ -37,6 +38,8 @@ function App() {
       <UseFormExamples/>
 
       <hr />
+      <h2>March - 05</h2>
+      <RouterExamples/>
       
     </div>
   );
