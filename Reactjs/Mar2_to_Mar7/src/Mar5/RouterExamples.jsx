@@ -6,6 +6,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import "./RouterExamples.css"
 
 // ===== Simple Pages =====
 
