@@ -1,5 +1,6 @@
 import React from "react"
 import Student from "./Mar2/Student";
+import JumbotronUseRef from "./Mar2/JumbotronUseRef";
 
 function App() {
   const studentSubjects = [
@@ -11,6 +12,8 @@ function App() {
 
   return (
     <div>
+      <hr />
+      <h2>March - 02</h2>
       <Student
         name="Kiran"
         usn="1RV21CS101"
@@ -18,6 +21,15 @@ function App() {
         semester="6"
         subjects={studentSubjects}
       />
+
+      <JumbotronUseRef/>
+
+
+      <hr />
+
+      <h2>March - 03 </h2>
+
+      <hr />
     </div>
   );
 }
