@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
+import "./UseFormExamples.css"
 function UseFormExamples() {
 
-  // ===== Lesson 36 : Basic Form =====
+   
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
@@ -11,7 +11,7 @@ function UseFormExamples() {
     setMessage("Hello " + name + ", your form was submitted!");
   };
 
-  // ===== Lesson 37 : Multiple Input Form =====
+ 
   const [formData, setFormData] = useState({
     email: "",
     course: "",
@@ -76,7 +76,7 @@ function UseFormExamples() {
 
       {/* Lesson 36 */}
       <div className="form-card">
-        <h2>Lesson 36 - Basic Form</h2>
+        <h2>Basic Form</h2>
 
         <form onSubmit={handleSubmit1}>
           <input
@@ -96,7 +96,7 @@ function UseFormExamples() {
 
       {/* Lesson 37 */}
       <div className="form-card">
-        <h2>Lesson 37 - Multiple Input Form</h2>
+        <h2>Multiple Input Form</h2>
 
         <form onSubmit={handleSubmit2}>
 
@@ -135,7 +135,7 @@ function UseFormExamples() {
 
       {/* Lesson 38 */}
       <div className="form-card">
-        <h2>Lesson 38 - Form Validation</h2>
+        <h2>Form Validation</h2>
 
         <form onSubmit={handleSubmit3}>
 
