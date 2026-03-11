@@ -1,19 +1,34 @@
-import React from 'react';
+import React from "react";
+import "./Student.css";
 
+function Exam(props) {
+  const { subject, marks, grade, date } = props;
 
-function Exam(){
+  return (
+    <div className="exam-card">
+      <h4>{subject}</h4>
 
-	return(
-		<>
+      <p>
+        <strong>Marks:</strong> {marks}
+      </p>
 
-        <h1>Exam Details</h1>
-	 
-		
-		
-		</>
-	)
+      <p>
+        <strong>Grade:</strong> {grade}
+      </p>
 
+      <p>
+        <strong>Exam Date:</strong> {date}
+      </p>
+
+      <span
+        className={
+          marks >= 50 ? "status-pass" : "status-fail"
+        }
+      >
+        {marks >= 50 ? "Pass" : "Fail"}
+      </span>
+    </div>
+  );
 }
 
-
-export default Exam
+export default Exam;

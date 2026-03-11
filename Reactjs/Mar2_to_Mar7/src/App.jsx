@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Student from './Mar2/Student'
+import React from "react"
+import Student from "./Mar2/Student";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const studentSubjects = [
+    { subject: "Mathematics", marks: 85, grade: "A", date: "2026-02-10" },
+    { subject: "Physics", marks: 78, grade: "B+", date: "2026-02-12" },
+    { subject: "Chemistry", marks: 65, grade: "B", date: "2026-02-15" },
+    { subject: "Computer Science", marks: 92, grade: "A+", date: "2026-02-18" }
+  ];
 
   return (
-    <>
-
-    <Student/>
-    
-    </>
-  )
+    <div>
+      <Student
+        name="Kiran"
+        usn="1RV21CS101"
+        course="B.E Computer Science"
+        semester="6"
+        subjects={studentSubjects}
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;
