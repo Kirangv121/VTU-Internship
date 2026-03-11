@@ -1,6 +1,7 @@
 import React from "react"
 import Student from "./Mar2/Student";
 import JumbotronUseRef from "./Mar2/JumbotronUseRef";
+import SearchExamples from "./Mar3/SearchExamples";
 
 function App() {
   const studentSubjects = [
@@ -28,6 +29,11 @@ function App() {
       <hr />
 
       <h2>March - 03 </h2>
+      <SearchExamples/>
+      <hr />
+
+      <h2>March - 04</h2>
+      
 
       <hr />
     </div>
