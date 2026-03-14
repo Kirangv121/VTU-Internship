@@ -1,6 +1,6 @@
 body{
   font-family: Arial, sans-serif;
-  background:#f4f6f8;
+  background:#dcf3e0;
 }
 
 .container{
@@ -9,7 +9,7 @@ body{
 }
 
 .form-container{
-  background:white;
+  background:rgb(227, 203, 203);
   width:350px;
   margin:auto;
   padding:20px;
