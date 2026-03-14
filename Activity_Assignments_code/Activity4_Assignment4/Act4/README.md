@@ -1,16 +1,10 @@
-# React + Vite
+# ACTIVITY - 4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Title: Controlled Form Components and State Management
 
-Currently, two official plugins are available:
+# In this activity, I developed a React form component that demonstrates the concept of controlled components. In React, controlled components are form elements whose values are controlled by the component's state. Instead of directly accessing values from the DOM, React manages the form input data using state variables and event handlers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# I created a form that collects user information such as name, email, and message. Each input field is connected to a state variable using the useState hook. The values entered in the form fields are updated dynamically using the onChange event handler. This approach ensures that the React component always has the latest form data stored in its state.
 
-## React Compiler
+ # This activity helped me understand how React manages form inputs efficiently and how data flows between user input and component state. Controlled components also improve validation, debugging, and overall data management in React applications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
