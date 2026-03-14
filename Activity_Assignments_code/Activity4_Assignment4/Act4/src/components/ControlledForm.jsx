@@ -1,56 +1,65 @@
 import { useState } from "react";
+import "./ControlledForm.css";
 
 function ControlledForm() {
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [course, setCourse] = useState("");
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
 
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleCourseChange = (event) => {
+    setCourse(event.target.value);
   };
 
   return (
-    <div className="form-container">
+    <div className="form-card">
 
-      <h2>React Controlled Form</h2>
+      <h2 className="form-title">React Controlled Form</h2>
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Enter your name"
-        value={formData.name}
-        onChange={handleChange}
-      />
+      <div className="form-group">
+        <label>Name</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          value={name}
+          onChange={handleNameChange}
+        />
+      </div>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email"
-        value={formData.email}
-        onChange={handleChange}
-      />
+      <div className="form-group">
+        <label>Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={handleEmailChange}
+        />
+      </div>
 
-      <textarea
-        name="message"
-        placeholder="Enter message"
-        value={formData.message}
-        onChange={handleChange}
-      />
+      <div className="form-group">
+        <label>Course</label>
+        <input
+          type="text"
+          placeholder="Enter your course"
+          value={course}
+          onChange={handleCourseChange}
+        />
+      </div>
 
-      <h3>Live Preview</h3>
-
-      <p><b>Name:</b> {formData.name}</p>
-      <p><b>Email:</b> {formData.email}</p>
-      <p><b>Message:</b> {formData.message}</p>
-	  
+      <div className="preview">
+        <h3>Live Preview</h3>
+        <p><b>Name:</b> {name}</p>
+        <p><b>Email:</b> {email}</p>
+        <p><b>Course:</b> {course}</p>
+      </div>
 
     </div>
   );

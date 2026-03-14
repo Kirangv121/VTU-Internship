@@ -13,7 +13,6 @@ function App() {
      <div className="container">
       <h1>Controlled Components Demo</h1>
       <ControlledForm/>
-
     </div>
        
     </>
