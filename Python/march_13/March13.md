@@ -60,7 +60,7 @@ def greet(name="Guest"):
     print("Hello", name)
 
 greet()
-greet("Alice")
+greet("Alice")		
 ```
 
 If no argument is passed, `"Guest"` will be used.
