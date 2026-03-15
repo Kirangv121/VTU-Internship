@@ -1,3 +1,5 @@
+
+print("----------Break example----------------------")
 # Break Example
 for i in range(10):
     if i == 5:
@@ -5,6 +7,7 @@ for i in range(10):
     print(i)
 
 
+print("----------Continue example----------------------")
 # Continue Example
 for i in range(5):
     if i == 2:
@@ -12,11 +15,14 @@ for i in range(5):
     print(i)
 
 
+print("---------Pass example----------------------")
 # Pass Example
 for i in range(3):
     pass
 
 
+
+print("----------Infinite Loop Handling example----------------------")
 # Infinite Loop Handling
 count = 0
 
@@ -27,7 +33,7 @@ while True:
     if count == 5:
         break
 
-
+print("----------Defining and Calling a Function example----------------------")
 # Defining and Calling a Function
 def greet():
     print("Hello, Welcome to Python")
@@ -55,6 +61,6 @@ show()
 y = 20
 
 def display():
-    print(y)
+    print("Y is = ",y)
 
 display()
