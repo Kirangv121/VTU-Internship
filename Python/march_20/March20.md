@@ -260,5 +260,5 @@ result = set_a ^ set_b
 | `intersection()` | Returns elements common to both sets |
 | `difference()` | Returns elements present in one set but not the other |
 | `symmetric_difference()` | Returns elements present in either set but not both |
-
+-------------------------------------------------------------------------------------
 ---
