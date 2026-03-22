@@ -60,3 +60,8 @@ print("Updated Dictionary:", emp)
 print(emp.get("name"))
 emp.update({"role":"SDE-3"})
 print(emp)
+
+
+print(emp.items())
+print(emp.keys())
+print(emp.values())
