@@ -55,3 +55,8 @@ print("\nUsing pop() example 2:")
 removed = emp.pop("age")
 print("Removed value:", removed)
 print("Updated Dictionary:", emp)
+
+
+print(emp.get("name"))
+emp.update({"role":"SDE-3"})
+print(emp)
