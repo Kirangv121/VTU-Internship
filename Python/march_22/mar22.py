@@ -41,3 +41,17 @@ print("\nUsing pop():")
 removed = student.pop("age")
 print("Removed value:", removed)
 print("Updated Dictionary:", student)
+
+
+
+emp = {
+    "name": "Kiran",
+    "role": "SDE-2",
+    "company": "Google",
+	"age": 22,
+}
+# 2. pop()
+print("\nUsing pop() example 2:")
+removed = emp.pop("age")
+print("Removed value:", removed)
+print("Updated Dictionary:", emp)
