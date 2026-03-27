@@ -9,7 +9,7 @@ def print_numbers():
 
 # Function to print letters
 def print_letters():
-    for ch in ['A', 'B', 'C', 'D', 'E']:
+    for ch in ['A', 'B', 'C', 'D', 'E','F']:
         print("Letter:", ch)
 
 # Creating threads
