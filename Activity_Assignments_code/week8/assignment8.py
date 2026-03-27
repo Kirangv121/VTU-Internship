@@ -30,6 +30,7 @@ print("Initial Balance:", account.get_balance())
 # Performing operations
 account.deposit(500)
 account.withdraw(300)
+account.withdraw(1400)
 
 # Accessing balance using getter
 print("Current Balance:", account.get_balance())
