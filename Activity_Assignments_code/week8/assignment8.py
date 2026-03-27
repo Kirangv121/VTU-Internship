@@ -24,7 +24,7 @@ class BankAccount:
         return self.__balance
 
 
-# Creating object
+# Creating object by using account 
 account = BankAccount(1000)
 
 # Performing operations
