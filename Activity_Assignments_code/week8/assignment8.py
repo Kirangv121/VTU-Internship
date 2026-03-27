@@ -26,7 +26,7 @@ class BankAccount:
 
 # Creating object by using account 
 account = BankAccount(1000)
-
+print("Initial Balance:", account.get_balance())
 # Performing operations
 account.deposit(500)
 account.withdraw(300)
