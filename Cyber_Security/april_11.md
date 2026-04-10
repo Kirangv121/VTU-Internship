@@ -29,6 +29,7 @@ A **vulnerability** is a weakness in a system that can be exploited.
 
 ### ⚡ Risk
 A **risk** is the likelihood that a threat will exploit a vulnerability and cause damage.
+Identifying threats involves monitoring, analysis, and security tools
 
 - Example: High risk if a system has weak security and is exposed to the internet
 
