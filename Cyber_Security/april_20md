@@ -1,0 +1,70 @@
+# 📅 April 20 – Cyber Security Learning Log
+
+## 🔥 Role of Firewalls in Network Protection
+A **firewall** is a security device (hardware or software) that monitors and controls incoming and outgoing network traffic based on predefined rules.
+
+### 🔹 Functions:
+- 🚫 Blocks unauthorized access
+- 🔍 Filters traffic based on IP, ports, and protocols
+- 🛡️ Prevents malicious data from entering the network
+- 📊 Monitors network activity
+
+### 🔹 Types of Firewalls:
+- **Packet Filtering Firewall**
+- **Stateful Inspection Firewall**
+- **Application Layer Firewall (Proxy Firewall)**
+- **Next-Generation Firewall (NGFW)**
+
+---
+
+## 🔐 Understanding Virtual Private Networks (VPNs)
+A **Virtual Private Network (VPN)** creates a secure and encrypted connection over a public network like the internet.
+
+### 🔹 How It Works:
+- Encrypts user data before transmission
+- Routes data through a secure VPN server
+- Hides user IP address
+
+### 🔹 Benefits:
+- 🌍 Secure remote access
+- 🔒 Data privacy and confidentiality
+- 🕵️ Protection from eavesdropping
+- 🌐 Access to restricted content
+
+---
+
+## ✅ Verifying Encryption of VPN Traffic
+
+### 🔹 Methods:
+- 🔍 **Check HTTPS Connection** – Ensure secure protocols are used
+- 📊 **Use Packet Analysis Tools** – Verify encrypted packets
+- 🔐 **Inspect VPN Settings** – Confirm encryption standards (AES-256)
+- 🌐 **IP Leak Tests** – Ensure real IP is hidden
+
+### 🔹 Indicators of Encryption:
+- Data appears unreadable (ciphertext)
+- Secure protocols like **IPSec, OpenVPN, WireGuard**
+
+---
+
+## 📊 Monitoring Network Security Using Analysis Tools
+
+### 🔹 Common Tools:
+- 🔍 **Wireshark** – Packet-level traffic analysis
+- 📡 **Snort** – Intrusion detection and prevention
+- 📊 **Nagios** – Network monitoring and alerting
+- 🧪 **NetworkMiner** – Network forensic analysis
+
+### 🔹 Uses:
+- Detect suspicious activities
+- Analyze network performance
+- Identify vulnerabilities
+- Monitor security incidents
+
+---
+
+## ✅ Summary
+- Firewalls protect networks by filtering and controlling traffic
+- VPNs provide secure and private communication over the internet
+- Encryption verification ensures VPN traffic is सुरक्षित and protected
+- Network analysis tools help monitor and maintain network security
