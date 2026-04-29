@@ -51,4 +51,4 @@ A **layered security architecture** (Defense in Depth) uses multiple layers of s
 ## ✅ Summary
 - Integrating multiple security domains strengthens overall protection
 - Layered security ensures multiple defense mechanisms
-- Continuous monitoring and quick response are critical to minimizing damage from security incidents
+- Continuous monitoring and quick response are critical to minimizing damage.
